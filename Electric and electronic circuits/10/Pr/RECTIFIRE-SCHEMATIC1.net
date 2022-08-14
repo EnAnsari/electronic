@@ -1,0 +1,9 @@
+* source RECTIFIRE
+V_V1         N00156 N00402  
++SIN 0 3 1k 0 0 0
+D_D1         0 N00402 D1N4007 
+D_D2         N00402 N00331 D1N4007 
+C_C1         0 N00331  1u  
+D_D3         0 N00156 D1N4007 
+D_D4         N00156 N00331 D1N4007 
+R_R1         0 N00331  1k  

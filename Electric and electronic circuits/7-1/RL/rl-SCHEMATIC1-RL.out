@@ -1,0 +1,72 @@
+
+**** 11/17/21 13:14:24 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-RL"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\7-1\RL\rl-schematic1-rl.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "rl-schematic1-rl.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 1n 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\rl-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING rl-SCHEMATIC1.net ****
+* source RL
+V_V1         N00153 0 40
+R_R1         N00153 N00123  2  
+L_L1         N00123 0  100nH IC=0 
+R_R2         0 N00123  2  
+
+**** RESUMING rl-schematic1-rl.sim.cir ****
+.END
+
+**** 11/17/21 13:14:24 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-RL"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\7-1\RL\rl-schematic1-rl.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00123)   20.0000 (N00153)   40.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.000E+01
+
+    TOTAL POWER DISSIPATION   4.00E+02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .22
+

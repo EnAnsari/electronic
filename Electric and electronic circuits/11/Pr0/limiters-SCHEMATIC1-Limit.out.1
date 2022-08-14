@@ -1,0 +1,47 @@
+
+**** 12/07/21 15:26:58 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Limit"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\11\Pr0\limiters-SCHEMATIC1-Limit.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "limiters-SCHEMATIC1-Limit.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_V3 -6 +6 0.01 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\limiters-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING limiters-SCHEMATIC1.net ****
+* source LIMITERS
+D_D2         OUT N02714 D1N4007 
+R_R1         0 OUT  100k  
+D_D1         OUT N00435 D1N4007 
+V_V2         N02714 0 4
+V_V2         N00435 0 4
+$
+ERROR -- Name "V_V2" is defined more than once
+R_R2         OUT IN  1k  
+-----------------$
+ERROR -- Expecting keyword STIMULUS, saw IN.
+
+V_V3         IN 0 1
+
+**** RESUMING limiters-SCHEMATIC1-Limit.sim.cir ****
+.END
+

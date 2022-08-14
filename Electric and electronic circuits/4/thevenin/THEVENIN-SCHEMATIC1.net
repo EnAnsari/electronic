@@ -1,0 +1,6 @@
+* source THEVENIN
+R_R1         N05535 N00170  330  
+R_R2         A N00170  330  
+L_L1         0 N05535  10uH IC=1 
+R_R3         0 N00170  1k  
+C_C1         A 0  1n IC=1  

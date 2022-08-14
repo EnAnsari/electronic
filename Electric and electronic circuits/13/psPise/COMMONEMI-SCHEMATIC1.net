@@ -1,0 +1,14 @@
+* source COMMONEMI
+Q_Q1         COLLECTOR BASE EMITER BC107A 
+R_Rs         IN VI  10k  
+V_VCC         N00409 0 10
+R_Rl         0 OUT  2.2k  
+R_Rc         COLLECTOR N00409  1k  
+R_Re         0 EMITER  220  
+R_R2         0 BASE  10k  
+R_R1         BASE N00409  47k  
+C_C1         VI BASE  100u  
+C_C2         COLLECTOR OUT  100u  
+V_V2         IN 0  
++SIN 0 20m 1k 0 0 0
+C_ByPass         0 EMITER  100u  

@@ -1,0 +1,8 @@
+* source WETSON
+V_V1         N00442 0 10
+R_R5         N00578 N00611  100  
+R_R1         N00442 N00578  1k  
+R_R2         N00611 N00442  4.7k  
+R_R3         0 N00578  5.6k  
+R_R4         N00611 0  3.3k  
+.PARAM  R_v=1k

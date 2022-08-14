@@ -1,0 +1,130 @@
+
+**** 12/19/21 10:20:34 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-T"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\13\TEST\t-schematic1-t.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "t-schematic1-t.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 1 100meg
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\t-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING t-SCHEMATIC1.net ****
+* source T
+V_VCC         VCC 0 15
+V_Vs         N02250 0 DC 0 AC 1 0
+Q_Q1         N02496 N02194 N02467 Q2N1893
+R_RC         N02496 VCC  1k  
+R_Rs         N02250 N02223  47  
+R_RL         0 OUT  1k  
+R_R1         N02194 VCC  11k  
+C_CE         0 N02467  1000u  
+R_R2         VEE N02194  1.8k  
+C_CL         OUT N02496  470u  
+R_RE         VEE N02467  220  
+C_Cs         N02223 N02194  470u  
+V_VEE         0 VEE 15
+
+**** RESUMING t-schematic1-t.sim.cir ****
+.END
+
+**** 12/19/21 10:20:34 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-T"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\13\TEST\t-schematic1-t.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N1893         
+               NPN             
+          IS    2.079000E-15 
+          BF  167.2          
+          NF    1            
+         VAF  100            
+         IKF    1.088        
+         ISE   24.360000E-15 
+          NE    1.357        
+          BR    1.502        
+          NR    1            
+         IKR     .3028       
+         ISC  264.600000E-15 
+          NC    1.545        
+          NK     .8271       
+          RC     .9069       
+         CJE   58.120000E-12 
+         VJE     .5          
+         MJE     .441        
+         CJC   45.290000E-12 
+         VJC     .5          
+         MJC     .31         
+          TF  738.100000E-12 
+         XTF   24.93         
+         VTF   10            
+         ITF    2.376        
+          TR    1.000000E-06 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 12/19/21 10:20:34 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-T"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\13\TEST\t-schematic1-t.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  OUT)    0.0000  (  VCC)   15.0000  (  VEE)  -15.0000  (N02194)  -11.0070     
+
+(N02223)    0.0000 (N02250)    0.0000 (N02467)  -11.7700 (N02496)     .4648 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -1.690E-02
+    V_Vs         0.000E+00
+    V_VEE       -1.690E-02
+
+    TOTAL POWER DISSIPATION   5.07E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            1.83
+

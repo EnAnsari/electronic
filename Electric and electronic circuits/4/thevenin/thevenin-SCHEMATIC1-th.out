@@ -1,0 +1,72 @@
+
+**** 10/20/21 15:10:33 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-th"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\4\thevenin\thevenin-SCHEMATIC1-th.sim 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "thevenin-SCHEMATIC1-th.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\thevenin-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING thevenin-SCHEMATIC1.net ****
+* source THEVENIN
+R_R1         N05535 N00170  330  
+R_R2         A N00170  330  
+L_L1         0 N05535  10uH IC=1 
+R_R3         0 N00170  1k  
+C_C1         A 0  1n IC=1  
+
+**** RESUMING thevenin-SCHEMATIC1-th.sim.cir ****
+.END
+
+**** 10/20/21 15:10:33 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-th"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\4\thevenin\thevenin-SCHEMATIC1-th.sim 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)    1.0015  (N00170)  248.8700 (N05535)  578.8700 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .14
+

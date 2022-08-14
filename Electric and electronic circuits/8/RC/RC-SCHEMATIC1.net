@@ -1,0 +1,5 @@
+* source RC
+V_V1         N00183 0  
++PULSE 0 4 0 1n 1n 1m 2m
+R_R1         N00237 N00183  1K  
+C_C1         N00237 0  100n  

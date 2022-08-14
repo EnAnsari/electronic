@@ -1,0 +1,46 @@
+
+**** 11/10/21 14:24:41 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-RL"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\7\RL\rl-schematic1-rl.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "rl-schematic1-rl.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ms 0 1u 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\rl-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING rl-SCHEMATIC1.net ****
+* source RL
+L_L1         N00323 0  22mH  
+R_R1         N00323 N00269  6.8k  
+L_L1         N02087 0  22mH  
+$
+ERROR -- Name "L_L1" is defined more than once
+V_V1         N00269 0  
++PULSE 0 4 0 1n 1n 0.5m 1m
+R_R1         N02087 N02021  6.8k  
+$
+ERROR -- Name "R_R1" is defined more than once
+V_V2         N02021 0 4
+
+**** RESUMING rl-schematic1-rl.sim.cir ****
+.END
+

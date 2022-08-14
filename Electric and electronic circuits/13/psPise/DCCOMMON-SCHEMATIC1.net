@@ -1,0 +1,7 @@
+* source DCCOMMON
+Q_Q1         COLLECTOR BASE EMITER BC107A 
+R_R1         BASE N00271  47k  
+R_Rc         COLLECTOR N00271  1k  
+R_Re         0 EMITER  220  
+R_R2         0 BASE  10k  
+V_VCC         N00271 0 10

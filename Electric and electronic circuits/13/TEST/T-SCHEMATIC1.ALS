@@ -1,0 +1,18 @@
+.ALIASES
+V_VCC           VCC(+=VCC -=0 )
+V_Vs            Vs(+=N02250 -=0 )
+Q_Q1            Q1(c=N02496 b=N02194 e=N02467 )
+R_RC            RC(1=N02496 2=VCC )
+R_Rs            Rs(1=N02250 2=N02223 )
+R_RL            RL(1=0 2=OUT )
+R_R1            R1(1=N02194 2=VCC )
+C_CE            CE(1=0 2=N02467 )
+R_R2            R2(1=VEE 2=N02194 )
+C_CL            CL(1=OUT 2=N02496 )
+R_RE            RE(1=VEE 2=N02467 )
+C_Cs            Cs(1=N02223 2=N02194 )
+V_VEE           VEE(+=0 -=VEE )
+_    _(out=OUT)
+_    _(Vcc=VCC)
+_    _(Vee=VEE)
+.ENDALIASES

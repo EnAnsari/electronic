@@ -1,0 +1,14 @@
+* source T
+V_VCC         VCC 0 15
+V_Vs         N02250 0 DC 0 AC 1 0
+Q_Q1         N02496 N02194 N02467 Q2N1893
+R_RC         N02496 VCC  1k  
+R_Rs         N02250 N02223  47  
+R_RL         0 OUT  1k  
+R_R1         N02194 VCC  11k  
+C_CE         0 N02467  1000u  
+R_R2         VEE N02194  1.8k  
+C_CL         OUT N02496  470u  
+R_RE         VEE N02467  220  
+C_Cs         N02223 N02194  470u  
+V_VEE         0 VEE 15

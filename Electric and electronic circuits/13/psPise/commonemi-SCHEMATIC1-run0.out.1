@@ -1,0 +1,117 @@
+
+**** 12/21/21 20:07:45 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-run0"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\13\psPise\commonemi-SCHEMATIC1-run0.
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "commonemi-SCHEMATIC1-run0.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ms 0 1u 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\commonemi-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING commonemi-SCHEMATIC1.net ****
+* source COMMONEMI
+Q_Q1         N00470 N00329 N00499 BC107A 
+R_R1         N00605 N00772  10k  
+V_V1         N00409 0 10
+V_V2         N00605 0  
++SIN 0 10m 1k 0 0 0
+R_R3         0 N00832  10T  
+R_R4         N00470 N00409  1k  
+R_R5         0 N00499  220  
+R_R6         0 N00329  10k  
+R_R7         N00329 N00409  47k  
+C_C1         N00772 N00329  100u  
+C_C2         N00470 N00832  100u  
+C_C3         0 N00499  100u  
+
+**** RESUMING commonemi-SCHEMATIC1-run0.sim.cir ****
+.END
+
+**** 12/21/21 20:07:45 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-run0"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\13\psPise\commonemi-SCHEMATIC1-run0.
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC107A          
+               NPN             
+          IS    7.049000E-15 
+          BF  375.5          
+          NF    1            
+         VAF  116.3          
+         IKF    4.589        
+         ISE    7.049000E-15 
+          NE    1.281        
+          BR    2.611        
+          NR    1            
+         IKR    5.313        
+         ISC  121.700000E-12 
+          NC    1.865        
+          RC    1.464        
+         CJE   11.500000E-12 
+         VJE     .5          
+         MJE     .2717       
+         CJC    5.380000E-12 
+         VJC     .6218       
+         MJC     .329        
+          TF  451.000000E-12 
+         XTF   17.43         
+         VTF   10            
+         ITF    6.194        
+          TR   10.000000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+ERROR -- Convergence problem in transient bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00329) 1.000E-06 (N00409) 1.000E-06 (N00470) 1.000E-06 (N00499) 1.000E-06     
+
+(N00605) 1.000E-06 (N00772) 1.000E-06 (N00832) 1.000E-06 
+
+
+  These voltages failed to converge:
+
+    V(N00470)                 =   101.56uV  \    1.000uV
+    V(N00329)                 =    17.82uV  \    1.000uV
+    V(N00409)                 =   101.56uV  \    1.000uV
+
+  These supply currents failed to converge:
+
+    I(V_V1)                   =   -1.782nA  \    1.000uA
+    I(V_V2)                   =         0A  \    1.000uA
+
+Try running with .OPTION STEPGMIN

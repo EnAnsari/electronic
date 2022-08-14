@@ -1,0 +1,117 @@
+
+**** 12/21/21 20:58:08 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-RUN001"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\13\psPise\dccommon-SCHEMATIC1-RUN0
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "dccommon-SCHEMATIC1-RUN001.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\dccommon-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING dccommon-SCHEMATIC1.net ****
+* source DCCOMMON
+Q_Q1         COLLECTOR BASE EMITER BC107A 
+R_R1         BASE N00271  47k  
+R_Rc         COLLECTOR N00271  1k  
+R_Re         0 EMITER  220  
+R_R2         0 BASE  10k  
+V_VCC         N00271 0 10
+
+**** RESUMING dccommon-SCHEMATIC1-RUN001.sim.cir ****
+.END
+
+**** 12/21/21 20:58:08 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-RUN001"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\13\psPise\dccommon-SCHEMATIC1-RUN0
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC107A          
+               NPN             
+          IS    7.049000E-15 
+          BF  375.5          
+          NF    1            
+         VAF  116.3          
+         IKF    4.589        
+         ISE    7.049000E-15 
+          NE    1.281        
+          BR    2.611        
+          NR    1            
+         IKR    5.313        
+         ISC  121.700000E-12 
+          NC    1.865        
+          RC    1.464        
+         CJE   11.500000E-12 
+         VJE     .5          
+         MJE     .2717       
+         CJC    5.380000E-12 
+         VJC     .6218       
+         MJC     .329        
+          TF  451.000000E-12 
+         XTF   17.43         
+         VTF   10            
+         ITF    6.194        
+          TR   10.000000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 12/21/21 20:58:08 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-RUN001"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\13\psPise\dccommon-SCHEMATIC1-RUN0
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( BASE)    1.5848  (EMITER)     .8857 (N00271)   10.0000 (COLLECTOR)    5.9945  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -4.185E-03
+
+    TOTAL POWER DISSIPATION   4.18E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .30
+

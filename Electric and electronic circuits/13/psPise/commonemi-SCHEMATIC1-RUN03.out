@@ -1,0 +1,128 @@
+
+**** 12/22/21 11:22:02 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-RUN03"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\13\psPise\commonemi-schematic1-run0
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "commonemi-schematic1-run03.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ms 0 1u 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\commonemi-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING commonemi-SCHEMATIC1.net ****
+* source COMMONEMI
+Q_Q1         COLLECTOR BASE EMITER BC107A 
+R_Rs         IN VI  10k  
+V_VCC         N00409 0 10
+R_Rl         0 OUT  2.2k  
+R_Rc         COLLECTOR N00409  1k  
+R_Re         0 EMITER  220  
+R_R2         0 BASE  10k  
+R_R1         BASE N00409  47k  
+C_C1         VI BASE  100u  
+C_C2         COLLECTOR OUT  100u  
+V_V2         IN 0  
++SIN 0 20m 1k 0 0 0
+C_ByPass         0 EMITER  100u  
+
+**** RESUMING commonemi-schematic1-run03.sim.cir ****
+.END
+
+**** 12/22/21 11:22:02 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-RUN03"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\13\psPise\commonemi-schematic1-run0
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC107A          
+               NPN             
+          IS    7.049000E-15 
+          BF  375.5          
+          NF    1            
+         VAF  116.3          
+         IKF    4.589        
+         ISE    7.049000E-15 
+          NE    1.281        
+          BR    2.611        
+          NR    1            
+         IKR    5.313        
+         ISC  121.700000E-12 
+          NC    1.865        
+          RC    1.464        
+         CJE   11.500000E-12 
+         VJE     .5          
+         MJE     .2717       
+         CJC    5.380000E-12 
+         VJC     .6218       
+         MJC     .329        
+          TF  451.000000E-12 
+         XTF   17.43         
+         VTF   10            
+         ITF    6.194        
+          TR   10.000000E-09 
+         XTB    1.5          
+          CN    2.42         
+           D     .87         
+
+
+**** 12/22/21 11:22:02 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-RUN03"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\13\psPise\commonemi-schematic1-run0
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (   VI)    0.0000  (  OUT)    0.0000  ( BASE)    1.5848      
+
+(EMITER)     .8857 (N00409)   10.0000 (COLLECTOR)    5.9945                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -4.185E-03
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   4.18E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .61
+

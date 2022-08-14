@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-D"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\9\Pr\diod-schematic1-d.sim ] 
+
+** Creating circuit file "diod-schematic1-d.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5ms 0 1u 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\diod-SCHEMATIC1.net" 
+
+
+.END

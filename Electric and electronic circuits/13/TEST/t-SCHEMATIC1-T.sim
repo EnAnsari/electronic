@@ -1,0 +1,119 @@
+@OrCAD Simulation Server Version: 1.0
+
+@Settings: 2 1
+@General:
+ProfileName= "T" 
+ProfileFile= "t-SCHEMATIC1-T.sim" 
+DesignFile= "t.dsn" 0 
+ProjectFile= "T.opj" 
+NetlistFile= "t-SCHEMATIC1-T.sim.cir" 
+RootSchematics= "SCHEMATIC1" 
+DataFile= "t-SCHEMATIC1-T.dat" 
+OutFile= "t-SCHEMATIC1-T.out" 
+Notes=
+@#$BEGINNOTES
+@#$ENDNOTES
+@End General
+@Analysis: 0 0
++0 0 0 
++0 "500ms" 
++1 "" 
++2 "490ms" 
++3 "5u" 
++4 "" 
++5 "" 
++6 "" 
+@End Analysis
+@Analysis: 1 1
++2 0 0
++0 "10" 
++1 "1" 
++2 "100meg" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 2 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+@End Analysis
+@Analysis: 3 0
++0 0 0
++0 "" 
++1 "" 
++2 "" 
+@End Analysis
+@Analysis: 4 0
++0 0 1 0 0 0 2 0 
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+@End Analysis
+@Analysis: 5 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+@End Analysis
+@Analysis: 6 0
++1 
++0 "" 
+@End Analysis
+@Analysis: 7 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 8 0
++0 
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
+@End Analysis
+@Analysis: 9 0
++0 "" 
+@End Analysis
+@Analysis: 10 0
++0 0
++0 "" 
++1 "" 
++2 "" 
++3 "" 
++4 "" 
++5 "" 
++6 "" 
++7 "" 
+@End Analysis
+@Analysis: 11 1
++ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+@End Analysis
+@Analysis: 12 0
++1118480 0
+@End Analysis
+@Analysis: 13 1
++0 1 1 0
+@End Analysis

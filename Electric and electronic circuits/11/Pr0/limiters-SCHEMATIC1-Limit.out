@@ -1,0 +1,104 @@
+
+**** 12/07/21 17:43:54 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Limit"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\11\Pr0\limiters-schematic1-limit.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "limiters-schematic1-limit.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1ms 0 1u 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\limiters-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING limiters-SCHEMATIC1.net ****
+* source LIMITERS
+D_D2         N04102 OUT D1N4007 
+V_V3         IN 0  
++SIN 0 6 1k 0 0 0
+R_R1         0 OUT  100k  
+V_V2         0 N04102 4
+D_D1         OUT N00435 D1N4007 
+V_V1         N00435 0 4
+R_R2         OUT IN  1k  
+
+**** RESUMING limiters-schematic1-limit.sim.cir ****
+.END
+
+**** 12/07/21 17:43:54 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Limit"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\11\Pr0\limiters-schematic1-limit.si
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4007         D1N4001         
+          IS   14.110000E-09   14.110000E-09 
+           N    1.984           1.984        
+         IKF   94.81           94.81         
+          BV    1.500000E+03   75            
+         IBV   10.000000E-06   10.000000E-06 
+          RS     .03389          .03389      
+          TT    5.700000E-06    5.700000E-06 
+         CJO   25.890000E-12   25.890000E-12 
+          VJ     .3245           .3245       
+           M     .44             .44         
+
+
+**** 12/07/21 17:43:54 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ ** Profile: "SCHEMATIC1-Limit"  [ C:\Users\WOLF2022\Desktop\UNI\3_semiterm\MadarElectric\Az\word\11\Pr0\limiters-schematic1-limit.si
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   IN)    0.0000  (  OUT) 506.2E-24  (N00435)    4.0000 (N04102)   -4.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         5.062E-25
+    V_V2        -1.411E-08
+    V_V1        -1.411E-08
+
+    TOTAL POWER DISSIPATION   1.13E-07  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            1.50
+
